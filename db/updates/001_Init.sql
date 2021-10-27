@@ -38,6 +38,7 @@ begin
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
 	) ON [PRIMARY]
 	ALTER TABLE [goods].[GoodsData] ADD  CONSTRAINT [DF_goods_GoodsExample_IsPromo]  DEFAULT (N'false') FOR [IsPromo]
+	ALTER TABLE [goods].[GoodsData] ADD CONSTRAINT [UQ_goods_GoodsData_Name] UNIQUE ([Name])
 end
 else
 begin
