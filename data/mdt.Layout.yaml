@@ -1,0 +1,64 @@
+﻿- Code: import.Template
+  Json: |-
+    {
+      "rows": [
+        {
+          "cols": [
+            {
+              "width": 6,
+              "type": "field",
+              "options": {
+                "field": "Code"
+              }
+            },
+            {
+              "width": 6,
+              "type": "field",
+              "options": {
+                "field": "Title"
+              }
+            },
+            {
+              "width": 12,
+              "type": "field",
+              "options": {
+                "field": "Json",
+                "control": "code",
+                "css": "json"
+              }
+            }
+          ]
+        }
+      ]
+    }
+- ID_Object: mdt.VIEW_GoodsInfo
+  Json: |-
+    {
+     "rows": [
+      {
+       "cols": [
+        {
+         "width": 6,
+         "type": "field",
+         "options": {
+          "field": "Name"
+         }
+        },
+        {
+         "width": 3,
+         "type": "field",
+         "options": {
+          "field": "Price"
+         }
+        },
+        {
+         "width": 3,
+         "type": "field",
+         "options": {
+          "field": "Count"
+         }
+        }
+       ]
+      }
+     ]
+    }

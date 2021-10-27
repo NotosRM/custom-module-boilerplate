@@ -1,0 +1,105 @@
+﻿import.FileTemplate:
+  audit_Enabled: true
+  tag_Enabled: false
+  upcheck_Enabled: false
+  Deleted: true
+  Title: File Template
+  Fields:
+    ID:
+      SortOrder: 0
+      Deleted: true
+    ID_File:
+      SortOrder: 0
+      Deleted: true
+      Title: File
+    ID_Template:
+      SortOrder: 0
+      Deleted: true
+      Title: Template
+  Title_ru: Файл шаблона
+mdt.GoodsData:
+  tag_Enabled: false
+  upcheck_Enabled: false
+  Readonly: false
+  FlagHierarchy: false
+  Deleted: false
+  FlagConfiguration: true
+  Fields:
+    ID:
+      SortOrder: 0
+      Deleted: false
+      Primary: true
+      Readonly: true
+    ID_Warehouse:
+      ID_RefObject: mdt.Warehouse
+      ID_RefObjectField: ID
+      SortOrder: 4
+      Deleted: false
+      ID_ObjectFieldKind: o2o
+    IsMark:
+      SortOrder: 5
+      Deleted: false
+      Title_ru: Помечен
+    Name:
+      SortOrder: 1
+      Deleted: false
+      Title_ru: Наименование товара
+    Price:
+      ID_ObjectFieldType: money
+      SortOrder: 3
+      Deleted: false
+      FormatMask: '#0.00 руб'
+      Title_ru: Стоимость
+mdt.VIEW_GoodsInfo:
+  tag_Enabled: false
+  upcheck_Enabled: false
+  Readonly: true
+  Deleted: false
+  FlagConfiguration: true
+  Fields:
+    Count:
+      SortOrder: 4
+      Deleted: false
+      Title_ru: Количество
+    ID:
+      SortOrder: 0
+      Deleted: false
+      Primary: true
+    IsMark:
+      SortOrder: 3
+      Deleted: false
+      Title_ru: Помечен
+    IsPromo:
+      SortOrder: 3
+      Deleted: true
+    Name:
+      SortOrder: 1
+      Deleted: false
+    Price:
+      SortOrder: 2
+      Deleted: false
+      Title_ru: Стоимость
+  Title_ru: Данные о товарах
+mdt.Warehouse:
+  tag_Enabled: false
+  upcheck_Enabled: false
+  Readonly: false
+  FlagHierarchy: false
+  Deleted: false
+  FlagConfiguration: true
+  Fields:
+    BoxesAmount:
+      SortOrder: 1
+      Deleted: false
+      Title: Количество коробок
+      Title_ru: Количество коробок
+    ID:
+      SortOrder: 0
+      Deleted: false
+      Primary: true
+      Readonly: true
+    ItemsPerBox:
+      SortOrder: 2
+      Deleted: false
+      Title: Товаров в 1 коробке
+      Title_ru: Товаров в 1 коробке

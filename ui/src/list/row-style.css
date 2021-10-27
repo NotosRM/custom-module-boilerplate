@@ -1,0 +1,6 @@
+/** Пример использования css-переменных MDT **/
+
+.row-promo {
+	font-style: italic !important;
+	background: var(--mdt-color-brand-info) !important;
+}

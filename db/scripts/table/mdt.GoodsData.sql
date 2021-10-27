@@ -1,0 +1,15 @@
+﻿CREATE TABLE [mdt].[GoodsData](
+	[ID] [int] IDENTITY(1,1) NOT NULL,
+	[Name] [varchar](100) COLLATE Cyrillic_General_CI_AS NOT NULL,
+	[Price] [int] NOT NULL,
+	[IsMark] [bit] NOT NULL,
+ CONSTRAINT [PK_mdt_GoodsExample] PRIMARY KEY CLUSTERED 
+(
+	[ID] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+
+GO
+
+ALTER TABLE [mdt].[GoodsData] ADD  CONSTRAINT [DF_mdt_GoodsExample_IsPromo]  DEFAULT (N'false') FOR [IsMark]
