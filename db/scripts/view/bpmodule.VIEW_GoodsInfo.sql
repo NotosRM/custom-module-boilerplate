@@ -7,7 +7,7 @@ SELECT NULL [ID]'
 GO
 ALTER VIEW [goods].[VIEW_GoodsInfo]
 AS
-    SELECT goods.GoodsData.ID, goods.GoodsData.Name, goods.GoodsData.Price, goods.Warehouse.BoxesAmount * goods.Warehouse.ItemsPerBox AS Count, IsPromo
+    SELECT goods.GoodsData.ID, goods.GoodsData.Name, goods.GoodsData.Price, goods.Warehouse.BoxesAmount * goods.Warehouse.ItemsPerBox AS Count, goods.IsPromo
     FROM goods.Warehouse INNER JOIN
         goods.GoodsData ON goods.Warehouse.ID = goods.GoodsData.ID
 

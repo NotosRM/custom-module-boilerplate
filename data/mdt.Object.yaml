@@ -11,16 +11,6 @@
       Deleted: false
       Primary: true
       Readonly: true
-    ID_Warehouse:
-      ID_RefObject: goods.Warehouse
-      ID_RefObjectField: ID
-      SortOrder: 4
-      Deleted: false
-      ID_ObjectFieldKind: o2o
-    IsPromo:
-      SortOrder: 5
-      Deleted: false
-      Title_ru: Акционный продукт
     Name:
       SortOrder: 1
       Deleted: false
@@ -31,6 +21,16 @@
       Deleted: false
       FormatMask: "#0.00 руб"
       Title_ru: Стоимость
+    IsPromo:
+      SortOrder: 5
+      Deleted: false
+      Title_ru: Акционный продукт
+    ID_Warehouse:
+      ID_RefObject: goods.Warehouse
+      ID_RefObjectField: ID
+      SortOrder: 4
+      Deleted: false
+      ID_ObjectFieldKind: o2o
 goods.VIEW_GoodsInfo:
   tag_Enabled: false
   upcheck_Enabled: false
@@ -38,24 +38,22 @@ goods.VIEW_GoodsInfo:
   Deleted: false
   FlagConfiguration: true
   Fields:
-    Count:
-      SortOrder: 4
-      Deleted: false
-      Title_ru: Количество
     ID:
       SortOrder: 0
       Deleted: false
       Primary: true
+    Name:
+      SortOrder: 1
+      Deleted: false
+      Title_ru: Наименование товара
+    Count:
+      SortOrder: 4
+      Deleted: false
+      Title_ru: Количество
     IsPromo:
       SortOrder: 3
       Deleted: false
       Title_ru: Акционный продукт
-    IsPromo:
-      SortOrder: 3
-      Deleted: true
-    Name:
-      SortOrder: 1
-      Deleted: false
     Price:
       SortOrder: 2
       Deleted: false
@@ -69,16 +67,16 @@ goods.Warehouse:
   Deleted: false
   FlagConfiguration: true
   Fields:
-    BoxesAmount:
-      SortOrder: 1
-      Deleted: false
-      Title: Количество коробок
-      Title_ru: Количество коробок
     ID:
       SortOrder: 0
       Deleted: false
       Primary: true
       Readonly: true
+    BoxesAmount:
+      SortOrder: 1
+      Deleted: false
+      Title: Количество коробок
+      Title_ru: Количество коробок
     ItemsPerBox:
       SortOrder: 2
       Deleted: false
