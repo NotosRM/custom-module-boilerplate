@@ -1,0 +1,15 @@
+﻿- Price: 95
+  IsPromo: false
+  Name: Альбом
+- Price: 15
+  IsPromo: false
+  Name: Шариковая ручка
+- Price: 215
+  IsPromo: true
+  Name: Азбука
+- Price: 21
+  IsPromo: false
+  Name: Карандаш
+- Price: 32
+  IsPromo: false
+  Name: Ластик
