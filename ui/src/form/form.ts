@@ -9,7 +9,7 @@ export function prepareFormExample() {
 		if (form.getObject().getCode() != "goods.VIEW_GoodsInfo") return;
 		// Добавление на форму команды вывода сообщения
 		form.addCommand({
-			title: () => (form.value("IsMark") ? "Снять с акции" : "Сделать акционным продуктом"),
+			title: () => (form.value("IsPromo") ? "Снять с акции" : "Сделать акционным продуктом"),
 			type: "primary",
 			execute: () => {
 				Api.request(
