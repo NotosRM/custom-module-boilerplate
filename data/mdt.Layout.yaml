@@ -1,37 +1,4 @@
-﻿- Code: import.Template
-  Json: |-
-    {
-      "rows": [
-        {
-          "cols": [
-            {
-              "width": 6,
-              "type": "field",
-              "options": {
-                "field": "Code"
-              }
-            },
-            {
-              "width": 6,
-              "type": "field",
-              "options": {
-                "field": "Title"
-              }
-            },
-            {
-              "width": 12,
-              "type": "field",
-              "options": {
-                "field": "Json",
-                "control": "code",
-                "css": "json"
-              }
-            }
-          ]
-        }
-      ]
-    }
-- ID_Object: mdt.VIEW_GoodsInfo
+﻿- ID_Object: goods.VIEW_GoodsInfo
   Json: |-
     {
      "rows": [

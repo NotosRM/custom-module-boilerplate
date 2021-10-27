@@ -8,6 +8,6 @@ export function prepareNavigation() {
 		title: "Товары",
 		code: "GoodsInfo",
 		icon: "trailer",
-		objectCode: "mdt.VIEW_GoodsInfo"
+		objectCode: "goods.VIEW_GoodsInfo"
 	});
 }

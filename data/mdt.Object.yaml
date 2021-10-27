@@ -1,23 +1,4 @@
-﻿import.FileTemplate:
-  audit_Enabled: true
-  tag_Enabled: false
-  upcheck_Enabled: false
-  Deleted: true
-  Title: File Template
-  Fields:
-    ID:
-      SortOrder: 0
-      Deleted: true
-    ID_File:
-      SortOrder: 0
-      Deleted: true
-      Title: File
-    ID_Template:
-      SortOrder: 0
-      Deleted: true
-      Title: Template
-  Title_ru: Файл шаблона
-mdt.GoodsData:
+﻿goods.GoodsData:
   tag_Enabled: false
   upcheck_Enabled: false
   Readonly: false
@@ -36,10 +17,10 @@ mdt.GoodsData:
       SortOrder: 4
       Deleted: false
       ID_ObjectFieldKind: o2o
-    IsMark:
+    IsPromo:
       SortOrder: 5
       Deleted: false
-      Title_ru: Помечен
+      Title_ru: Акционный продукт
     Name:
       SortOrder: 1
       Deleted: false
@@ -48,9 +29,9 @@ mdt.GoodsData:
       ID_ObjectFieldType: money
       SortOrder: 3
       Deleted: false
-      FormatMask: '#0.00 руб'
+      FormatMask: "#0.00 руб"
       Title_ru: Стоимость
-mdt.VIEW_GoodsInfo:
+goods.VIEW_GoodsInfo:
   tag_Enabled: false
   upcheck_Enabled: false
   Readonly: true
@@ -65,10 +46,10 @@ mdt.VIEW_GoodsInfo:
       SortOrder: 0
       Deleted: false
       Primary: true
-    IsMark:
+    IsPromo:
       SortOrder: 3
       Deleted: false
-      Title_ru: Помечен
+      Title_ru: Акционный продукт
     IsPromo:
       SortOrder: 3
       Deleted: true
@@ -80,7 +61,7 @@ mdt.VIEW_GoodsInfo:
       Deleted: false
       Title_ru: Стоимость
   Title_ru: Данные о товарах
-mdt.Warehouse:
+goods.Warehouse:
   tag_Enabled: false
   upcheck_Enabled: false
   Readonly: false

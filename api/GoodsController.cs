@@ -14,15 +14,15 @@ namespace Goods.Controllers
 		public GoodsController(GoodsService gs)
 			=> _gs = gs;
 
-		public class MarkRequest
+		public class PromoRequest
 		{
 			public int recordId;
 		}
 
-		// /goods/mark
-		public void Mark(MarkRequest req)
+		// /goods/promo
+		public void Promo(PromoRequest req)
 		{
-			_gs.Mark(req.recordId);
+			_gs.Promo(req.recordId);
 		}
 	}
 }

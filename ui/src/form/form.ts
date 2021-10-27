@@ -5,23 +5,24 @@ export function prepareFormExample() {
 	FormService.onCreate((form) => {
 		console.log(form.getObject().getCode());
 
-		// Проверка, что текущая таблица - ep.Event
-		if (form.getObject().getCode() != "mdt.view_GoodsInfo") return;
+		// Проверка, что текущая таблица - goods.VIEW_GoodsInfo
+		if (form.getObject().getCode() != "goods.VIEW_GoodsInfo") return;
 		// Добавление на форму команды вывода сообщения
 		form.addCommand({
 			title: () => (form.value("IsMark") ? "Снять с акции" : "Сделать акционным продуктом"),
+			type: "primary",
 			execute: () => {
 				Api.request(
-					"ep/postpone",
+					"goods/promo",
 					{
-						RecordIds: form.value("ID")
+						RecordId: form.value("ID")
 					},
 					{ method: "POST" }
 				).then(() => {
 					Ui.showNotification(
 						{
-							title: "Успешно!",
-							text: "Товар помечен"
+							title: "Успех!",
+							text: "Изменения внесены"
 						},
 						10000
 					);
