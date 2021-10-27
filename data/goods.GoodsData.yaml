@@ -1,15 +1,20 @@
-﻿- Price: 95
+﻿- ID: 1
+  Price: 95
   IsPromo: false
   Name: Альбом
-- Price: 15
+- ID: 2
+  Price: 15
   IsPromo: false
   Name: Шариковая ручка
-- Price: 215
+- ID: 3
+  Price: 215
   IsPromo: true
   Name: Азбука
-- Price: 21
+- ID: 4
+  Price: 21
   IsPromo: false
   Name: Карандаш
-- Price: 32
+- ID: 5
+  Price: 32
   IsPromo: false
   Name: Ластик

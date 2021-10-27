@@ -1,10 +1,15 @@
-﻿- BoxesAmount: 1
+﻿- ID: 1
+  BoxesAmount: 1
   ItemsPerBox: 11
-- BoxesAmount: 3
+- ID: 2
+  BoxesAmount: 3
   ItemsPerBox: 90
-- BoxesAmount: 1
+- ID: 3
+  BoxesAmount: 1
   ItemsPerBox: 9
-- BoxesAmount: 2
+- ID: 4
+  BoxesAmount: 2
   ItemsPerBox: 60
-- BoxesAmount: 1
+- ID: 5
+  BoxesAmount: 1
   ItemsPerBox: 40
