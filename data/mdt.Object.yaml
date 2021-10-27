@@ -12,7 +12,7 @@
       Primary: true
       Readonly: true
     ID_Warehouse:
-      ID_RefObject: mdt.Warehouse
+      ID_RefObject: goods.Warehouse
       ID_RefObjectField: ID
       SortOrder: 4
       Deleted: false
