@@ -1,0 +1,15 @@
+﻿Альбом:
+  Price: 95
+  IsFragile: false
+Гарнитура:
+  Price: 15
+  IsFragile: false
+Граненный стакан:
+  Price: 215
+  IsFragile: true
+Карандаш:
+  Price: 21
+  IsFragile: false
+Ластик:
+  Price: 32
+  IsFragile: false
