@@ -11,6 +11,8 @@ begin
 		[ID] [int] IDENTITY(1,1) NOT NULL,
 		[BoxesAmount] [int] NOT NULL,
 		[ItemsPerBox] [int] NOT NULL,
+		[Code] int NOT NULL,
+		CONSTRAINT [UQ_goods_Warehouse_Code] UNIQUE ([Code]),
 		CONSTRAINT [PK_goods_Warehouse] PRIMARY KEY CLUSTERED 
 (
 	[ID] ASC
