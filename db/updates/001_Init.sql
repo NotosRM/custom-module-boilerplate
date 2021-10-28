@@ -57,12 +57,12 @@ GO
 INSERT [goods].[GoodsData]
 	([ID], [Name], [Price], [IsFragile])
 VALUES
-	(2, N'Шариковая ручка', 15, 0)
+	(2, N'Гарнитура', 15, 0)
 GO
 INSERT [goods].[GoodsData]
 	([ID], [Name], [Price], [IsFragile])
 VALUES
-	(3, N'Азбука', 215, 1)
+	(3, N'Граненный стакан', 215, 1)
 GO
 INSERT [goods].[GoodsData]
 	([ID], [Name], [Price], [IsFragile])
