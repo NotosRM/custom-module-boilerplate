@@ -1,6 +1,6 @@
 /** Пример использования css-переменных MDT **/
 
-.row-promo {
+.row-fragile {
 	font-style: italic !important;
-	background: var(--mdt-color-brand-info) !important;
+	background: var(--mdt-color-brand-warning) !important;
 }

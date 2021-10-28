@@ -21,10 +21,10 @@
       Deleted: false
       FormatMask: "#0.00 руб"
       Title_ru: Стоимость
-    IsPromo:
+    IsFragile:
       SortOrder: 5
       Deleted: false
-      Title_ru: Акционный продукт
+      Title_ru: Хрупкий продукт
     ID_Warehouse:
       ID_RefObject: goods.Warehouse
       ID_RefObjectField: ID
@@ -50,10 +50,10 @@ goods.VIEW_GoodsInfo:
       SortOrder: 4
       Deleted: false
       Title_ru: Количество
-    IsPromo:
+    IsFragile:
       SortOrder: 3
       Deleted: false
-      Title_ru: Акционный продукт
+      Title_ru: Хрупкий продукт
     Price:
       SortOrder: 2
       Deleted: false

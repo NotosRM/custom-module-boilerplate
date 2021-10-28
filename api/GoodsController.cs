@@ -14,15 +14,15 @@ namespace Goods.Controllers
 		public GoodsController(GoodsService gs)
 			=> _gs = gs;
 
-		public class PromoRequest
+		public class FragileRequest
 		{
 			public int recordId;
 		}
 
-		// /goods/promo
-		public void Promo(PromoRequest req)
+		// /goods/fragile
+		public void Fragile(FragileRequest req)
 		{
-			_gs.Promo(req.recordId);
+			_gs.Fragile(req.recordId);
 		}
 	}
 }

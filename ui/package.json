@@ -27,7 +27,6 @@
 		"webpack-cli": "^4.6.0"
 	},
 	"dependencies": {
-		"imask": "^6.0.7",
 		"mdt-client": "^1.0.21"
 	}
 }

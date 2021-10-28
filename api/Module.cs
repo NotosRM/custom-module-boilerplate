@@ -15,6 +15,7 @@ namespace Goods
 
 		public Module(RecordRegistry rr, GoodsService gs)
 		{
+			
 		}
 	}
 }

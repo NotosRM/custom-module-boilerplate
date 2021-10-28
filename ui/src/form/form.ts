@@ -9,11 +9,11 @@ export function prepareFormExample() {
 		if (form.getObject().getCode() != "goods.VIEW_GoodsInfo") return;
 		// Добавление на форму команды вывода сообщения
 		form.addCommand({
-			title: () => (form.value("IsPromo") ? "Снять с акции" : "Сделать акционным продуктом"),
-			type: "primary",
+			title: () => (form.value("IsFragile") ? "Снять метку хрупкости" : "Пометить товар, как хрупкий"),
+			type: () => (form.value("IsFragile") ? "primary" : "warning"),
 			execute: () => {
 				Api.request(
-					"goods/promo",
+					"goods/fragile",
 					{
 						RecordId: form.value("ID")
 					},

@@ -10,9 +10,9 @@ export function prepareListExample() {
 
 		/* Добавление дополнительных стилей для строк */
 		list.addTransformerForRow((row) => {
-			// Добавление класса строкам, у которых значение поля IsPromo равно true
-			if (row.record.IsPromo) {
-				row.addClass("row-promo");
+			// Добавление класса строкам, у которых значение поля IsFragile равно true
+			if (row.record.IsFragile) {
+				row.addClass("row-fragile");
 			}
 		});
 	});

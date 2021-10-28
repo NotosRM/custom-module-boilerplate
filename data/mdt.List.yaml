@@ -1,10 +1,10 @@
 ﻿- ID_Object: goods.VIEW_GoodsInfo
   Columns:
-    Count:
-      Position: 2
-    IsPromo:
-      Position: 3
     Name:
       Position: 0
+    Count:
+      Position: 2
     Price:
       Position: 1
+    IsFragile:
+      Position: 3
