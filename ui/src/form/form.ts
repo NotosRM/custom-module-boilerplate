@@ -5,10 +5,13 @@ export function prepareFormExample() {
 	FormService.onCreate((form) => {
 		// Проверка, что текущая таблица - cmb.BooksData
 		if (form.getObject().getCode() != "cmb.BooksData") return;
+
 		// Добавление на форму команды вывода сообщения
 		form.addCommand({
 			title: "Вывести код книги",
 			type: "info",
+			// Отображать кнопку только для существующих записей
+			visible: () => !form.isNewRecord(),
 			execute: () => {
 				Ui.showNotification(
 					{
@@ -17,6 +20,14 @@ export function prepareFormExample() {
 					},
 					10000
 				);
+			}
+		});
+
+		// Установка опций для поля формы
+		form.setFieldOptions({
+			// Отображать поле ISBN только для новой записи
+			ISBN: {
+				visible$: () => form.isNewRecord()
 			}
 		});
 	});

@@ -11,7 +11,7 @@ export function prepareListExample() {
 		list.addTransformerForRow((row) => {
 			// Добавление класса строкам, у которых значение поля FlagRead равно true
 			if (row.record.FlagRead) {
-				row.addClass("row-book-read");
+				row.addClass("row-style-success");
 			}
 		});
 
@@ -28,7 +28,7 @@ export function prepareListExample() {
 				// Получаем выделенную книгу
 				const getBookId = () => list.getSelectedRows()[0].$id;
 				Api.request(
-					"cmb/read",
+					"books/read",
 					{
 						BookId: getBookId()
 					},

@@ -1,6 +1,6 @@
 /** Пример использования css-переменных MDT **/
 
-.row-has-translate {
+.row-style-success {
 	font-style: italic !important;
-	background: var(--mdt-color-brand-warning) !important;
+	background: var(--mdt-color-brand-success) !important;
 }
