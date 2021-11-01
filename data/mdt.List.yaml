@@ -1,10 +1,10 @@
-﻿- ID_Object: goods.VIEW_GoodsInfo
+﻿- ID_Object: cmb.BooksData
   Columns:
     Name:
       Position: 0
-    Count:
-      Position: 2
-    Price:
+    Author:
       Position: 1
-    IsFragile:
+    ReleaseYear:
+      Position: 2
+    FlagRead:
       Position: 3

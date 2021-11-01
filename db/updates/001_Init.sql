@@ -1,50 +1,26 @@
 if not exists (select *
 from sys.schemas
-where name = N'goods')
-	exec('create schema [goods]')
+where name = N'cmb')
+	exec('create schema [cmb]')
 go
 
-if object_id('[goods].[Warehouse]') is null
+if object_id('[cmb].[BooksData]') is null
 begin
-	CREATE TABLE [goods].[Warehouse]
+	CREATE TABLE [cmb].[BooksData]
 	(
-		[ID] [int] IDENTITY(1,1) NOT NULL,
-		[BoxesAmount] [int] NOT NULL,
-		[ItemsPerBox] [int] NOT NULL,
-		[Code] int NOT NULL,
-		CONSTRAINT [UQ_goods_Warehouse_Code] UNIQUE ([Code]),
-		CONSTRAINT [PK_goods_Warehouse] PRIMARY KEY CLUSTERED 
-(
-	[ID] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-	) ON [PRIMARY]
+		[ID] int NOT NULL IDENTITY,
+		[Name] varchar(100) NOT NULL,
+		[Author] varchar(100) NOT NULL,
+		[ReleaseYear] int NOT NULL,
+		[FlagRead] bit NOT NULL,
+		[ISBN] int NOT NULL,
+		CONSTRAINT [PK_cmb_BooksData] PRIMARY KEY ([ID]),
+		CONSTRAINT [UQ_cmb_BooksData_Name] UNIQUE ([Name])
+	)
 end
 else
 begin
-	delete from [goods].[Warehouse]
-END
-
-go
-
-if object_id('[goods].[GoodsData]') is null
-begin
-	CREATE TABLE [goods].[GoodsData]
-	(
-		[ID] [int] IDENTITY(1,1) NOT NULL,
-		[Name] [varchar](100) COLLATE Cyrillic_General_CI_AS NOT NULL,
-		[Price] [int] NOT NULL,
-		[IsFragile] [bit] NOT NULL,
-		CONSTRAINT [PK_goods_GoodsExample] PRIMARY KEY CLUSTERED 
-(
-	[ID] ASC
-)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
-	) ON [PRIMARY]
-	ALTER TABLE [goods].[GoodsData] ADD  CONSTRAINT [DF_goods_GoodsExample_IsFragile]  DEFAULT (N'false') FOR [IsFragile]
-	ALTER TABLE [goods].[GoodsData] ADD CONSTRAINT [UQ_goods_GoodsData_Name] UNIQUE ([Name])
-end
-else
-begin
-	delete from [goods].[GoodsData]
+	delete from [cmb].[BooksData]
 END
 
 

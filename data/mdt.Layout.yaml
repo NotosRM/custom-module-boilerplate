@@ -1,4 +1,4 @@
-﻿- ID_Object: goods.VIEW_GoodsInfo
+﻿- ID_Object: cmb.BooksData
   Json: |-
     {
      "rows": [
@@ -12,18 +12,32 @@
          }
         },
         {
-         "width": 3,
+         "width": 6,
          "type": "field",
          "options": {
-          "field": "Price"
+          "field": "Author"
          }
         },
         {
-         "width": 3,
+         "width": 6,
          "type": "field",
          "options": {
-          "field": "Count"
+          "field": "ReleaseYear"
          }
+        },
+        {
+         "width": 6,
+         "type": "field",
+         "options": {
+          "field": "FlagRead"
+         }
+        },
+        {
+         "width": 12,
+         "options": {
+          "field": "ISBN"
+         },
+         "type": "field"
         }
        ]
       }

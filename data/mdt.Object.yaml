@@ -1,84 +1,27 @@
-﻿goods.GoodsData:
+﻿test.BooksData:
   tag_Enabled: false
   upcheck_Enabled: false
-  Readonly: false
-  FlagHierarchy: false
   Deleted: false
-  FlagConfiguration: true
   Fields:
+    Author:
+      SortOrder: 0
+      Deleted: false
+      Title_ru: Автор
     ID:
       SortOrder: 0
       Deleted: false
-      Primary: true
-      Readonly: true
+    ISBN:
+      SortOrder: 0
+      Deleted: false
+    FlagRead:
+      SortOrder: 0
+      Deleted: false
+      Title_ru: Книга прочитана
     Name:
-      SortOrder: 1
-      Deleted: false
-      Title_ru: Наименование товара
-    Price:
-      ID_ObjectFieldType: money
-      SortOrder: 3
-      Deleted: false
-      FormatMask: "#0.00 руб"
-      Title_ru: Стоимость
-    IsFragile:
-      SortOrder: 5
-      Deleted: false
-      Title_ru: Хрупкий продукт
-    ID_Warehouse:
-      ID_RefObject: goods.Warehouse
-      ID_RefObjectField: ID
-      SortOrder: 4
-      Deleted: false
-      ID_ObjectFieldKind: o2o
-goods.VIEW_GoodsInfo:
-  tag_Enabled: false
-  upcheck_Enabled: false
-  Readonly: true
-  Deleted: false
-  FlagConfiguration: true
-  Fields:
-    ID:
       SortOrder: 0
       Deleted: false
-      Primary: true
-    Name:
-      SortOrder: 1
-      Deleted: false
-      Title_ru: Наименование товара
-    Count:
-      SortOrder: 4
-      Deleted: false
-      Title_ru: Количество
-    IsFragile:
-      SortOrder: 3
-      Deleted: false
-      Title_ru: Хрупкий продукт
-    Price:
-      SortOrder: 2
-      Deleted: false
-      Title_ru: Стоимость
-  Title_ru: Данные о товарах
-goods.Warehouse:
-  tag_Enabled: false
-  upcheck_Enabled: false
-  Readonly: false
-  FlagHierarchy: false
-  Deleted: false
-  FlagConfiguration: true
-  Fields:
-    ID:
+      Title_ru: Название
+    ReleaseYear:
       SortOrder: 0
       Deleted: false
-      Primary: true
-      Readonly: true
-    BoxesAmount:
-      SortOrder: 1
-      Deleted: false
-      Title: Количество коробок
-      Title_ru: Количество коробок
-    ItemsPerBox:
-      SortOrder: 2
-      Deleted: false
-      Title: Товаров в 1 коробке
-      Title_ru: Товаров в 1 коробке
+      Title_ru: Год выпуска

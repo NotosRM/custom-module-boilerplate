@@ -1,32 +1,22 @@
-import { Api, FormService, Ui } from "mdt-client";
+import { FormService, Ui } from "mdt-client";
 
 export function prepareFormExample() {
 	// Подписка на событие создания формы
 	FormService.onCreate((form) => {
-		console.log(form.getObject().getCode());
-
-		// Проверка, что текущая таблица - goods.VIEW_GoodsInfo
-		if (form.getObject().getCode() != "goods.VIEW_GoodsInfo") return;
+		// Проверка, что текущая таблица - cmb.BooksData
+		if (form.getObject().getCode() != "cmb.BooksData") return;
 		// Добавление на форму команды вывода сообщения
 		form.addCommand({
-			title: () => (form.value("IsFragile") ? "Снять метку хрупкости" : "Пометить товар, как хрупкий"),
-			type: () => (form.value("IsFragile") ? "primary" : "warning"),
+			title: "Вывести код книги",
+			type: "info",
 			execute: () => {
-				Api.request(
-					"goods/fragile",
+				Ui.showNotification(
 					{
-						RecordId: form.value("ID")
+						title: "ISBN",
+						text: form.value("ISBN")
 					},
-					{ method: "POST" }
-				).then(() => {
-					Ui.showNotification(
-						{
-							title: "Успех!",
-							text: "Изменения внесены"
-						},
-						10000
-					);
-				});
+					10000
+				);
 			}
 		});
 	});

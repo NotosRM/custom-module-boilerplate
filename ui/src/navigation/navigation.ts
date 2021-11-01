@@ -5,9 +5,9 @@ import { Navigation } from "mdt-client";
 export function prepareNavigation() {
 	// Добавление узла с дочерними узлами
 	Navigation.addNode({
-		title: "Товары",
-		code: "GoodsInfo",
-		icon: "trailer",
-		objectCode: "goods.VIEW_GoodsInfo"
+		title: "Список книг",
+		code: "BooksData",
+		icon: "book",
+		objectCode: "cmb.BooksData"
 	});
 }

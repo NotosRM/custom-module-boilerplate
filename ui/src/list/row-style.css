@@ -1,6 +1,6 @@
 /** Пример использования css-переменных MDT **/
 
-.row-fragile {
+.row-has-translate {
 	font-style: italic !important;
 	background: var(--mdt-color-brand-warning) !important;
 }
