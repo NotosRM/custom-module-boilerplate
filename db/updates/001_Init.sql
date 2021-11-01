@@ -13,10 +13,11 @@ begin
 		[Author] varchar(100) NOT NULL,
 		[ReleaseYear] int NOT NULL,
 		[FlagRead] bit NOT NULL,
-		[ISBN] int NOT NULL,
-		CONSTRAINT [PK_cmb_BooksData] PRIMARY KEY ([ID]),
-		CONSTRAINT [UQ_cmb_BooksData_Name] UNIQUE ([Name])
+		[ISBN] varchar(25) NOT NULL,
+		CONSTRAINT [PK_cmb_BooksData] PRIMARY KEY ([ID])
 	)
+	ALTER TABLE [cmb].[BooksData]
+    ADD CONSTRAINT [UQ_cmb_BooksData_Name] UNIQUE ([Name])
 end
 else
 begin
